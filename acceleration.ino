@@ -3,19 +3,19 @@
 #define MOT_A1_PIN 5
 #define MOT_A2_PIN 6
 
-byte accelerationPWM = 50;
+
 
 
 void acceleration() {
-  if(isGoing){
-//    Serial.println("h");
-    analogWrite(MOT_A2_PIN, accelerationPWM);
-    digitalWrite(MOT_A1_PIN, LOW);
-  }
-  else {
-    digitalWrite(MOT_A1_PIN, LOW);
-    digitalWrite(MOT_A2_PIN, LOW);
-  }
+//  if(isGoing){
+////    Serial.println("h");
+//    analogWrite(MOT_A2_PIN, accelerationPWM);
+//    digitalWrite(MOT_A1_PIN, LOW);
+//  }
+//  else {
+//    digitalWrite(MOT_A1_PIN, LOW);
+//    digitalWrite(MOT_A2_PIN, LOW);
+//  }
 //  
 //  accelerationButtonState = digitalRead(right_button);
 //  reverseButtonState = digitalRead(down_button);

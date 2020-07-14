@@ -4,5 +4,5 @@ void loop() {
 //  acceleration();
 //  steering();
 //  transmission();
-//  lights(); 
+  lights(lightsOn); 
 }
