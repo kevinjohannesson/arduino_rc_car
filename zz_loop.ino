@@ -2,7 +2,6 @@
 void loop() {
   RF();
 //  acceleration();
-//  steering();
-//  transmission();
+  steering(steeringAngle + offset);
   lights(lightsOn); 
 }

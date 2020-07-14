@@ -28,6 +28,8 @@ void getData() {
 }
  
 void parseData() {
+  Serial.print("dataReceived: ");
+  Serial.println(dataReceived);
   // split the data into its parts
   char * strtokIndx; // this is used by strtok() as an index
   

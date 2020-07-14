@@ -1,11 +1,7 @@
-
-
-
-    
 void setup() {
   // Servo
-//  steeringServo.attach(9);
-//  steeringServo.write(90 + offset);
+  steeringServo.attach(SERVO_PIN);
+  steeringServo.write(90 + offset);
 
   // DRV8833
 //  pinMode(MOT_A1_PIN, OUTPUT);
@@ -19,12 +15,13 @@ void setup() {
   pinMode(LIGHT_FR_PIN, OUTPUT); 
   pinMode(LIGHT_BL_PIN, OUTPUT); 
   pinMode(LIGHT_BR_PIN, OUTPUT);  
-  
+
+  // RF
   Serial.begin(115200);
   Serial.println("SimpleRx Starting");
   radio.begin();
   radio.setDataRate( RF24_250KBPS );
   radio.openReadingPipe(1, thisSlaveAddress);
   radio.startListening();
-  
+ 
 }

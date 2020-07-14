@@ -1,8 +1,4 @@
-#include <Servo.h>
 
-// STEERING
-Servo steeringServo;
-byte offset = 2; // for alignment
 
 // LIGHTS
 //#define LIGHT_FL_PIN A2
